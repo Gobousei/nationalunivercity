@@ -1,0 +1,19 @@
+<!doctype html>
+<head>
+<!-- jQueryの指定 -->
+  <script src="jquery-3.2.1.min.js"></script>
+
+  <!-- 共通部分の読み込み -->
+  <script type="text/javascript">
+    $(function() {
+      // header.htmlをid属性「header」という名前で読み込むように指定する
+      $("#header").load("identical.html");      
+    });
+  </script>
+  </head>
+<body>
+    <div id="header">
+      <div id="identical"></div>
+    </div>
+</body>
+</html>
