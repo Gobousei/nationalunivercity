@@ -10,13 +10,84 @@ function myEnter(){
      }
 }
           </script>
+          <style>
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-flat {
+  overflow: hidden;
+
+  padding: 1.5rem 6rem;
+
+  color: #fff;
+  border-radius: 0;
+  background: #000;
+}
+
+a.btn-flat span {
+  position: relative;
+}
+
+a.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 150%;
+  height: 500%;
+
+  content: "";
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+
+  background: #00b7ee;
+}
+
+a.btn-flat:hover:before {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+          </style>
 </head>
 <body>
 <h1 class="bottom_small">
-          中国地方国立大周回旅行は、4月2日から4月5日までの連続する二日間で、岡山大学を除く中国地方の国立大すべてを回る旅行です。
-      </h1>
-     <h1 class="bottom_small">
-          対象者は、なんとなく近くの国立大に行きたいけど、どこがいいか決まっていない中高生です。今回、特殊な切符を使用すため、すごく安いです。是非
+          中国地方国立大周回旅行は、4月4日から4月5日で、岡山大学を除く中国地方の国立大すべてを回る旅行です。
       </h1>
       <h1 class="font">
           ＊この旅行にはじめから計画されていることは大学に行くことまでです。各研究室、学部学科などの見学は、参加希望が集まり、それぞれの意見を聞いた上で問い合わせを行います。
@@ -31,7 +102,7 @@ function myEnter(){
 
       </h1>
       <div class="bottom_small">
-          この旅行は計画段階です。希望者が3名以下の場合は中止します。
+          この旅行の参加者募集は締め切りました。
       </div>
       <div class="bottom_small">
           <a href="4_4中国地方国立大周回旅行 - シート1.pdf"target=”_blank”>
@@ -62,35 +133,9 @@ function myEnter(){
           </tr>
         </table>
     </div　class="bottom_sace">
-               <div class="bottom_space"　style="background-color:#FFFF66;">
-        <h1 id = spec>参考までに、通常料金＊１</h1>
-        <table border="1" hspace="30">
-          <tr>
-              <td>切符代</td>
-              <td>30,400円</td>
-            </tr>
-<tr>
-<th>バス代</th>
-<th>1400円</th>
-</tr>
-          <tr>
-            <td>ご飯代</td>
-            <td>~6000円</td>
-          </tr>
-          <tr>
-                    <tr>
-                  <td>宿泊料</td>
-                  <td>5000円ほど</td>
-                  </tr>
-            <td>通常料金</td>
-            <td>~43000円</td>
-          </tr>
-        </table>
-    </div　class="bottom_sace">
-    <a href="https://forms.gle/5o7k9qQDXQsNTXGT7"target=”_blank”>参加希望・質問用フォーム</a><font color="red">  3/24.正午締切、先着順</font>
+    <a href="https://forms.gle/5o7k9qQDXQsNTXGT7"target=”_blank”>参加希望・質問用フォーム</a><font color="red">回答を締め切りました</font>
     <br>
 ＊１この旅行では、JR西日本　中国エリアどこでも切符を使用します。この切符は、４月９日まで販売されています。通常料金とは、それを使用しなかった場合の料金です。<br></br>
-
-<input type="button" value="専用ページ" onclick="myEnter()">     
+<a href="" class="btn btn-flat"　onclick="myEnter()"><span>参加者用データ置き場</span></a>
 </body>
 </html>
