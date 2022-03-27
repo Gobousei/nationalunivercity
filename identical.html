@@ -9,6 +9,14 @@ function myEnter(){
          alert( "パスワードが違います" );
      }
 }
+                    function Enter(){
+     myPassWord=prompt("非公開になっています。パスワードを入力してください","");
+     if ( myPassWord == "enter" ){
+         location.href = 'enter.html'
+     }else{
+         alert( "パスワードが違います" );
+     }
+}
  const button1 = document.getElementById("botan");
 
     button1.addEventListener('mouseout', () => {
@@ -48,9 +56,7 @@ border: solid 2px blue;
           この旅行の参加者募集は締め切りました。
       </div>
       <div class="bottom_small">
-          <a href="4_4中国地方国立大周回旅行 - シート1.pdf"target=”_blank”>
-              行程表
-          </a>
+          <a href="javascript:Enter();">行程表</a>
       </div>
                 <div class="bottom_small">
           <font color="red">この旅行は金額が大きいうえ、一泊するため、必ず両親の同意書が必要になります。</font>
