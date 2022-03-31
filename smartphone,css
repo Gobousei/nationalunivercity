@@ -1,0 +1,16 @@
+            .bottom_space {
+  font-size: 32px;
+  margin-bottom: 3em;
+padding: 15px;
+}
+.bottom_small {
+    font-size: 32px;
+  margin-bottom: 1em;
+padding: 15px;
+}
+.font{
+    font-size: 32px;
+}
+       .right {
+    text-align: right; 
+}
