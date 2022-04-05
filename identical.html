@@ -9,14 +9,7 @@ function myEnter(){
          alert( "パスワードが違います" );
      }
 }
-                    function Enter(){
-     myPassWord=prompt("非公開になっています。パスワードを入力してください","");
-     if ( myPassWord == "enter" ){
-         location.href = 'enter.html'
-     }else{
-         alert( "パスワードが違います" );
-     }
-}
+
  const button1 = document.getElementById("botan");
 
     button1.addEventListener('mouseout', () => {
@@ -40,10 +33,6 @@ border: solid 2px blue;
 <h1 class="bottom_small">
           中国地方国立大周回旅行は、4月4日から4月5日で、岡山大学を除く中国地方の国立大すべてを回る旅行です。
       </h1>
-          <font color="red">参加者の申し込みは締め切りました</font>
-      <h1 class="font">
-          ＊この旅行にはじめから計画されていることは大学に行くことまでです。各研究室、学部学科などの見学は、参加希望が集まり、それぞれの意見を聞いた上で問い合わせを行います。
-      </h1>
           <h1 class="bottom_small">
           ↓回る大学
       </h1>
@@ -54,36 +43,11 @@ border: solid 2px blue;
 
       </h1>
       <div class="bottom_small">
-          この旅行の参加者募集は締め切りました。
+          この旅行は終了しました。
       </div>
       <div class="bottom_small">
-          <a href="javascript:Enter();">行程表</a>
+          <a href="行程表.pdf">行程表</a>
       </div>
-                <div class="bottom_small">
-          <font color="red">この旅行は金額が大きいうえ、一泊するため、必ず両親の同意書が必要になります。</font>
-      </div>
-      <div class="bottom_space">
-        <h1 id = spec>料金</h1>
-        <table border="1" hspace="30">
-          <tr>
-              <td>切符代（特殊切符のため宿泊料込み）</td>
-              <td>14,500円</td>
-            </tr>
-<tr>
-<th>バス代</th>
-<th>1400円</th>
-</tr>
-          <tr>
-            <td>ご飯代</td>
-            <td>~6000円</td>
-          </tr>
-          <tr>
-            <td>合計予算</td>
-            <td>~22000円</td>
-          </tr>
-        </table>
-    </div　class="bottom_sace">
-    <a href="https://forms.gle/5o7k9qQDXQsNTXGT7"target=”_blank”>参加希望・質問用フォーム</a><font color="red">回答を締め切りました</font>
     <br>
 <input type="button" value="参加者用" onclick="myEnter()" id="botan">
 </body>
